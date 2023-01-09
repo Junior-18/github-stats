@@ -31,6 +31,8 @@ jobs:
       run: |
         python3 -m pip install --upgrade pip setuptools wheel
         python3 -m pip install -r requirements.txt
+        python3 -m pip install python-decouple
+        python3 -m from decouple import config
 
     # Generate all statistics images
     - name: Generate images
